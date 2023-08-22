@@ -1,0 +1,124 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.main{
+    background-color: #eeeeee;
+}
+
+.main-nav{
+    border: 1px solid #fff;
+    background-color: #fff;
+    height: 60px;
+    box-shadow:  5px 6px 7px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+}
+
+.nav-list{
+    display: flex;
+    list-style: none;
+    height: 100%;
+}
+
+.nav-list .nav-item{
+    margin-left: 18px ;
+    line-height: 60px;
+    height: 100%;
+}
+.nav-list .nav-item h1{
+    line-height: 60px;
+    color: #000;
+    font-size: 25px;
+    height: 100%;
+
+}
+.nav-list .nav-item a{
+    color:#888885 ;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+
+}
+.nav-item-strong{
+    color: red !important;
+    border-bottom: 3px solid red;
+}
+
+/* chỉnh ảnh nè */
+.nav-list .nav-item a img{
+    margin-top: 4px;
+    width: 50px;
+    height: 50px;
+}
+/* chỉnh icon nè */
+.nav-list .nav-item a i {
+    margin-left: 7px;
+    font-size: 12px;
+
+}
+
+.main-cart{
+    display: grid;
+    grid-template-columns: repeat(5, 19%);
+    grid-column-gap: 12px;
+    grid-row-gap: 15px;
+    padding: 20px 0;    
+    justify-content: center;
+}
+.cart-product{
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow:  5px 9px 7px rgba(0, 0, 0, 0.3);
+    }
+.contain-img{
+    width: 100%;
+    height: 200px;
+
+}
+.cart-product-img{
+    width: 100%;
+    height: 100%;
+    background-origin: center;
+    border-top-left-radius: 5px ;
+    border-top-right-radius: 5px;
+
+}
+.cart-product-heading{
+    padding: 6px 10px 2px;
+    font-size: 20px;
+    color: #000;
+    line-height: 22px;
+    height: 28px;
+}
+.dot-dot-dot{
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+.cart-product-address{
+    font-size: 18px;
+    padding: 0 10px;
+    color: #b0abad;
+    margin-top: 5px;
+    line-height: 20px;
+    height: 22px;
+
+}
+.cart-product-type{
+    font-size: 18px;
+    color: #a49368;
+    margin:22px 8px 50px;
+
+}
+.cart-product-type i{
+    color: red;
+}
+.cart-product-type span{
+    margin-left: 4px;
+}
+
