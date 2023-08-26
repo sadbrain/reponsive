@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="font/fontawesome-free-6.4.2-web/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .form{
+            width: 500px;
+            margin: 10px auto;
+            background-color: black;
+            padding: 10px 30px 30px;
+
+            border-color: #e1e1e1;
+            border-style: solid;
+            border-right-width: 10px;
+            border-top-width: 3px;
+            border-left-width: 7px;
+            border-bottom-width: 3px;
+            background-color: #fff;
+        }
+        .form div h4{
+            color: #92d748;
+
+        }
+        .form-group{
+            height: 40px;
+            line-height: 40px;
+            display: flex;
+            margin-top: 14px;
+
+        }
+       .form-icon{
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: #fafafa;
+            border: 1px solid #f5f5f5;
+            color: #bfb5b7;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+        .form input{
+            color: #bfb5b7;
+            background-color: #fafafa;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            padding: 0 10px;
+            outline: none;
+            border: 1px solid #f5f5f5;
+            border-left: none;
+            
+        }
+        .account input{
+            flex: 1;
+
+
+        }
+        .account .form-group input::before{
+            content: "aaaaaaaaaaaaaaaaa";
+            height: 50px;
+            width: 300px;
+            background-color: red;
+            color: red;
+            position: absolute;
+        }
+        .birth-day{
+            width: 49%;
+            display: inline-block;
+            margin-top: 30px;
+        }
+ 
+        .birth-day input{
+            width: 60px;
+            margin-right: 10px;
+            padding: 0 10px;
+            outline: none;
+            border-radius: 3px;
+            border-left: 1px solid #f5f5f5;
+
+        }
+        .gender{
+            width: 49%;
+            display: inline-block;
+            float: right;
+            margin-top: 30px;
+        }   
+
+
+        .gender input{
+            width: 50%;
+            text-align: center;
+            border-left: 1px solid #f5f5f5;
+            
+
+        }
+        .gender input:nth-child(2){
+            border-top-left-radius: none;
+            border-bottom-left-radius: none;
+
+        }
+        .gender input:nth-child(1){
+            border-top-right-radius: none;
+            border-bottom-right-radius: none;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+        }
+        .payment{
+            margin-top: 30px;
+
+        }
+        .payment .form-group input[type="button"]{
+            width: 50%;
+            border-radius: none;
+            border: 1px solid #f5f5f5;
+
+
+
+        }
+        .payment .form-group input[type="button"].button-active{
+            color: #fff;
+            background-color: #92d748;
+            border: 1px solid green;
+
+        }
+        .payment input[name="cardnum"]{
+            flex: 1;
+
+        }
+        .payment input[name="cardcvc"]{
+            margin-right: 10px;
+        }
+        .day-of-card{
+            display: flex;
+            width: 45%;
+        }
+        .day-of-card input{
+            width: 50%;
+            color: #000;
+            text-align: center;
+            border: none;
+        }
+        .day-of-card input:first-child{
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+
+        }
+        .day-of-card button{
+            line-height: 40px;
+            outline: none;
+            border-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <form class="form">
+
+        <div class="account">
+            <h4>Account</h4>
+            <div class="form-group">
+                <div class="form-icon">
+                    <i class="fa-solid fa-tag"></i>
+                </div>
+                <input type="text" name="fullname" id="fullname" placeholder="Full Name">
+            </div>
+    
+            <div class="form-group">
+                <div class="form-icon">
+                    <i class="fa-solid fa-tag"></i>
+                </div>
+                <input type="text" name="email" id="email" placeholder="Email address">
+            </div>
+    
+            <div class="form-group">
+                <div class="form-icon">
+                    <i class="fa-solid fa-tag"></i>
+                </div>
+                <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+        </div>
+
+
+        <div class="birth-day">
+            <h4>Date of birth</h4>
+                <div class="form-group">
+
+
+                    <input type="text" name="day" id="days" placeholder="DD">
+        
+                    <input type="text" name="month" id="month" placeholder="MM">
+        
+                    <input type="text" name="year" id="year" placeholder="YYYY">
+                </div>
+            </div>
+
+
+        
+
+        <div class="gender">
+            <h4>Gender</h4>
+            <div class="form-group">
+
+                <input type="text" name="gender" id="gender" placeholder="Male">
+    
+                <input type="text" name="gender" id="gender" placeholder="Female">
+            </div>
+            
+        </div>
+
+
+        <div class="payment">
+            <h4>Payment Details</h4>
+            <div class="form-group">
+
+                <input class = "button-active" type="button" name="gender"  value="Credic card">
+    
+                <input type="button" name="gender"  value="Paypal">
+            </div>
+
+            <div class="form-group">
+                <div class="form-icon">
+                    <i class="fa-solid fa-tag"></i>
+                </div>
+                <input type="text" name="cardnum"  placeholder="Card Number">
+    
+            </div>
+
+            <div class="form-group">
+                <div class="form-icon">
+                    <i class="fa-solid fa-tag"></i>
+                </div>
+                <input type="text" name="cardcvc"  placeholder="Card CVC">
+                <div class="day-of-card">
+                    <input type="text" name="day-of-card"  placeholder="01 Jan">
+                    <button><i class="fa-solid fa-tag"></i></button>
+                    <input type="text" name="day-of-card"  placeholder="2015">
+                    <button><i class="fa-solid fa-tag"></i></button>
+
+                </div>
+
+
+            </div>
+            
+        </div>
+
+
+
+
+
+    </form>
+</body>
+</html>
