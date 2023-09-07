@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color: green;
+            height: 130px;
+            padding: 20px ;
+            width: 100%;
+        }
+        header h1{
+            color: #fff;
+        }
+        header p{
+            color: #fff;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .container{
+            display: flex;
+            width: 100%;
+            margin-top: 10px;
+        }
+        .container article{
+            width: 33%;
+            padding: 20px;
+            border: 0.5px solid rgba(0,0,0,0.5);
+            margin: 0 5px;
+            border-radius: 5px;
+
+        }
+        .container article h3{
+            color: #000;
+            font-size: 30px;
+            margin-bottom: 25px ;
+        }
+        .container article span{
+            color: #000;
+            font-size: 20px;
+
+        }
+        .container article p{
+            color: #000;
+            font-size: 20px;
+            margin: 20px 0;
+
+        }
+        .container article img{
+            width: 100%;
+        }
+        @media screen and (max-width: 667px){
+            header h1{
+                font-size: 25px;
+            }
+            header p{
+                font-size: 18px;
+            }
+            .container {
+                flex-wrap: wrap;
+            }
+            .container article{
+                width: 100%;
+                margin-top: 10px;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>VTC Aacdemy Fashion Week</h1>
+        <p>resize this reponsive page!</p>
+    </header>
+    <main>
+        <section class="container">
+            <article>
+                <h3>London</h3>
+                <span>London is the capital city of England</span>
+                <p>It is the most populous city in the united Kingdom, with a metropolitan area of over 13 million inhabitants</p>
+                <img src="https://cdn.tuoitre.vn/471584752817336320/2023/9/3/f4ulng4xuaahxkj-16937396712241940229328.jpg" alt="">
+            </article>
+            <article>
+                <h3>London</h3>
+                <span>London is the capital city of England</span>
+                <p>It is the most populous city in the united Kingdom, with a metropolitan area of over 13 million inhabitants</p>
+                <img src="https://cdn.tuoitre.vn/471584752817336320/2023/9/3/f4ulng4xuaahxkj-16937396712241940229328.jpg" alt="">
+            </article>
+            <article>
+                <h3>London</h3>
+                <span>London is the capital city of England</span>
+                <p>It is the most populous city in the united Kingdom, with a metropolitan area of over 13 million inhabitants</p>
+                <img src="https://cdn.tuoitre.vn/471584752817336320/2023/9/3/f4ulng4xuaahxkj-16937396712241940229328.jpg" alt="">
+            </article>
+        </section>
+        
+    </main>
+</body>
+</html>
